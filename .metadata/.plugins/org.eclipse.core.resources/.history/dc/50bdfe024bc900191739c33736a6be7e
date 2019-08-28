@@ -1,0 +1,41 @@
+package kopo.dao;
+
+import java.sql.Connection;
+import java.util.List;
+
+import kopo.domain.ExamRio;
+
+public class Exam_Repo {
+	public static Connection getConnection() {
+		
+		return null;
+	}
+	public static int createDB() {
+		
+		return 0;
+	}
+	public static int dropDB() {
+		
+		return 0;
+	}
+	public static int insert(ExamRio e) {
+		
+		return 0;
+	}
+	public static int update(ExamRio e) {
+		
+		return 0;
+	}
+	public static int delete(ExamRio e) {
+		
+		return 0;
+	}
+	public static List<ExamRio> getAllRecord(){
+		
+		return null;
+	}
+	public static ExamRio getRecordById(int id) {
+		
+		return null;
+	}
+}

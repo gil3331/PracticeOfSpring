@@ -1,0 +1,10 @@
+package kopo.dao;
+
+import java.sql.Connection;
+
+public class Exam_Repo {
+	public static Connection getConnection() {
+		
+		return null;
+	}
+}

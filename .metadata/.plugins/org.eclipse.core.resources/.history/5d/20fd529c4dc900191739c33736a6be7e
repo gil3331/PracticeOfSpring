@@ -1,0 +1,97 @@
+package kopo.dao;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.List;
+
+import kopo.domain.ExamRio;
+
+public class Exam_Repo {
+	public static Connection getConnection() {
+		Connection conn = null;
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			conn = DriverManager.getConnection("jdbc:mysql://192.168.23.115:3306/kopo15?characterEncoding=UTF-8&serverTimezone=UTC", "root", "asdf1234");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return conn;
+	}
+	public static int createDB() {
+		try {
+		Connection conn = DriverManager.getConnection("jdbc:mysql://192.168.23.115:3306/kopo15?characterEncoding=UTF-8&serverTimezone=UTC", "root", "asdf1234");
+		Statement stmt = conn.createStatement();
+		stmt.executeUpdate(
+				"create table examtable(name varchar(20), studentid int not null primary key, kor int, eng int, mat int) DEFAULT CHARSET=utf8;");
+		stmt.close();
+		conn.close();	
+		
+		}catch(Exception e) {
+			
+		}
+		return 0;
+	}
+	public static int dropDB() {
+		try {
+			Connection conn = DriverManager.getConnection("jdbc:mysql://192.168.23.115:3306/kopo15?characterEncoding=UTF-8&serverTimezone=UTC", "root", "asdf1234");
+			Statement stmt = conn.createStatement();
+			stmt.executeUpdate(
+					"drop table examtable;");
+			stmt.close();
+			conn.close();
+		} catch(Exception e) {
+	        
+	    }
+		return 0;
+	}
+	public static int insert(ExamRio e) {
+		int status=0;
+		try {
+			Connection conn = DriverManager.getConnection("jdbc:mysql://192.168.23.115:3306/kopo15?characterEncoding=UTF-8&serverTimezone=UTC", "root", "asdf1234");
+			PreparedStatement ps = conn.prepareStatement(			
+					"insert into examtable(name,studentid,kor,eng,mat) values(?,?,?,?,?);");
+			ps.setString(1, e.getName());
+			ps.setInt(2, e.getStudentid());
+			ps.setInt(3, e.getKor());
+			ps.setInt(4, e.getEng());
+			ps.setInt(5, e.getMat());
+			status=ps.executeUpdate();
+			ps.close();
+			conn.close();
+		} catch(Exception u) {System.out.println(u);}
+		return status;
+	}
+	public static int update(ExamRio e) {
+		int status=0;
+		try {
+			Connection conn = DriverManager.getConnection("jdbc:mysql://192.168.23.115:3306/kopo15?characterEncoding=UTF-8&serverTimezone=UTC", "root", "asdf1234");
+			PreparedStatement ps = conn.prepareStatement(			
+					"update examtable set name=?,studentid=?,kor=?,eng=?,math=? where studentid=?;");
+			ps.setString(1, e.getName());
+			ps.setInt(2, e.getStudentid());
+			ps.setInt(3, e.getKor());
+			ps.setInt(4, e.getEng());
+			ps.setInt(5, e.getMat());
+			ps.setInt(6, e.getStudentid());
+			status=ps.executeUpdate();
+			ps.close();
+			conn.close();	
+		return status;
+	}
+	public static int delete(ExamRio e) {
+		
+		return 0;
+	}
+	public static List<ExamRio> getAllRecord(){
+		
+		return null;
+	}
+	public static ExamRio getRecordById(int id) {
+		
+		return null;
+	}
+}
