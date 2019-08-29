@@ -20,6 +20,14 @@
 		<item value="org.eclipse.m2e.wtp.feature:1.4.2.20190530-0057"/>
 		<item value="org.eclipse.m2e.wtp.jaxrs.feature:1.4.2.20190530-0057"/>
 		<item value="org.eclipse.m2e.wtp.jsf.feature:1.4.2.20190530-0057"/>
+		<item value="org.eclipse.mylyn.commons.identity:1.16.0.v20180904-2231"/>
+		<item value="org.eclipse.mylyn.commons.notifications:1.16.0.v20180904-2231"/>
+		<item value="org.eclipse.mylyn.commons.repositories:1.16.0.v20180904-2231"/>
+		<item value="org.eclipse.mylyn.commons:3.24.2.v20180904-2231"/>
+		<item value="org.eclipse.mylyn.context_feature:3.24.2.v20180905-0014"/>
+		<item value="org.eclipse.mylyn.discovery:3.24.2.v20180904-2231"/>
+		<item value="org.eclipse.mylyn.monitor:3.24.2.v20180904-2231"/>
+		<item value="org.eclipse.mylyn_feature:3.24.2.v20180905-0003"/>
 		<item value="org.eclipse.pde:3.14.0.v20190605-1800"/>
 		<item value="org.eclipse.platform:4.12.0.v20190605-1801"/>
 		<item value="org.eclipse.rcp:4.12.0.v20190605-1801"/>

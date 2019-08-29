@@ -36,5 +36,7 @@
   <uri name="http://www.w3.org/TR/xmldsig-core/xmldsig-core-schema.xsd" uri="jar:file:/C:/sts/sts-4.3.1.RELEASE/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar!/xsd/xmldsig-core-schema.xsd"/>
   <system systemId="http://www.w3.org/2001/xml.xsd" uri="jar:file:/C:/sts/sts-4.3.1.RELEASE/plugins/org.eclipse.xsd_2.16.0.v20190321-1341.jar!/cache/www.w3.org/2001/xml.xsd"/>
   <uri name="http://www.w3.org/2001/XMLSchema" uri="jar:file:/C:/sts/sts-4.3.1.RELEASE/plugins/org.eclipse.xsd_2.16.0.v20190321-1341.jar!/cache/www.w3.org/2001/XMLSchema.xsd"/>
-  <public publicId="-//LOG4J//DTD LOG4J//EN" uri="jar:file:/C:/sts/sts-4.3.1.RELEASE/plugins/org.springsource.ide.eclipse.commons.ui_3.9.10.201906242213-CI-B472.jar!/dtd/log4j-1.2.dtd" webURL="https://logging.apache.org/log4j/1.2/apidocs/org/apache/log4j/xml/doc-files/log4j.dtd"/>
+  <public publicId="-//LOG4J//DTD LOG4J//EN" uri="jar:file:/C:/sts/sts-4.3.1.RELEASE/plugins/org.springsource.ide.eclipse.commons.ui_3.9.10.201907310936-CI-B474.jar!/dtd/log4j-1.2.dtd" webURL="https://logging.apache.org/log4j/1.2/apidocs/org/apache/log4j/xml/doc-files/log4j.dtd"/>
+  <public publicId="-//SPRING//DTD BEAN//EN" uri="platform:/plugin/org.springframework.beans/org/springframework/beans/factory/xml/spring-beans.dtd" webURL="https://www.springframework.org/dtd/spring-beans.dtd"/>
+  <public publicId="-//SPRING//DTD BEAN 2.0//EN" uri="jar:file:/C:/sts/sts-4.3.1.RELEASE/plugins/org.springframework.beans_4.3.23.20190313-CI.jar!/org/springframework/beans/factory/xml/spring-beans-2.0.dtd" webURL="https://www.springframework.org/dtd/spring-beans-2.0.dtd"/>
 </catalog>
