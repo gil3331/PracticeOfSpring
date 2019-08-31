@@ -15,7 +15,7 @@
 	
 	try {
 		Class.forName("com.mysql.cj.jdbc.Driver");
-		Connection conn = DriverManager.getConnection("jdbc:mysql://192.168.23.115:3306/kopo15?characterEncoding=UTF-8&serverTimezone=UTC", "root", "asdf1234");
+		Connection conn = DriverManager.getConnection("jdbc:mysql://35.189.155.41:3306/kopo15?characterEncoding=UTF-8&serverTimezone=UTC", "root", "asdf1234");
 	    PreparedStatement ps=conn.prepareStatement("select * from examtable where studentid=?");  
         ps.setInt(1,studentid);  
         ResultSet rset=ps.executeQuery();  

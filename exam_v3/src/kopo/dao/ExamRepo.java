@@ -15,7 +15,7 @@ public class ExamRepo {
 		Connection conn = null;
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			conn = DriverManager.getConnection("jdbc:mysql://192.168.23.115:3306/kopo15?characterEncoding=UTF-8&serverTimezone=UTC", "root", "asdf1234");
+			conn = DriverManager.getConnection("jdbc:mysql://35.189.155.41:3306/kopo15?characterEncoding=UTF-8&serverTimezone=UTC", "root", "asdf1234");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

@@ -13,7 +13,7 @@
 	<%
 	try {
 		Class.forName("com.mysql.cj.jdbc.Driver");
-		Connection conn = DriverManager.getConnection("jdbc:mysql://192.168.23.115:3306/kopo15?characterEncoding=UTF-8&serverTimezone=UTC", "root", "asdf1234");
+		Connection conn = DriverManager.getConnection("jdbc:mysql://35.189.155.41:3306/kopo15?characterEncoding=UTF-8&serverTimezone=UTC", "root", "asdf1234");
 		Statement stmt = conn.createStatement();
 		stmt.executeUpdate("insert into examtable (name, studentid, kor, eng, mat) values('나연',209901,95,100,95);"); 
 	    stmt.executeUpdate("insert into examtable (name, studentid, kor, eng, mat) values('정연',209902,95,95,95);");
