@@ -5,7 +5,7 @@ public class ExamRIO {
 	private int studentid;
 	private int kor;
 	private int eng;
-	
+	private int mat;
 	
 	public ExamRIO() {
 		super();
@@ -49,6 +49,5 @@ public class ExamRIO {
 	public void setMat(int mat) {
 		this.mat = mat;
 	}
-	private int mat;
-	
+		
 }
