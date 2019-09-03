@@ -1,18 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="-X"/>
+		<item key="selection" value="Hibernate"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="hibernate"/>
+			<item value="spring-orm"/>
+			<item value="orm"/>
+			<item value="javax"/>
+			<item value="snap"/>
 			<item value="-x"/>
 			<item value="javax.servlet"/>
 			<item value="-xlint"/>
 			<item value="javax.s"/>
-			<item value="javax"/>
 			<item value="java"/>
 			<item value="SIO"/>
 		</list>
